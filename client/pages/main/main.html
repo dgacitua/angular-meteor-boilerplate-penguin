@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="page-header">
+    <h1>Welcome to {{ main.appName }}!</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <p>Use this template for your own Angular-Meteor projects!</p>
+      <p>Based on the following technologies</p>
+      <ul>
+        <li>JavaScript with ECMAScript 6 standard</li>
+        <li>Meteor 1.5</li>
+        <li>AngularJS 1.6</li>
+        <li>MongoDB 3.4</li>
+        <li>Bootstrap 3</li>
+        <li>jQuery 3</li>
+        <li>angular-ui-router 1.0</li>
+      </ul>
+      <p><a ui-sref="about">About this template...</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <h3>Get ping from server!</h3>
+      <div>
+        <button class="btn" ng-click="main.getPingMeteor()">Ping from Meteor Method</button>
+        <button class="btn" ng-click="main.getPingRest()">Ping from REST API</button>
+      </div>
+      <pre>{{ main.pingResult | json: 2 }}</pre>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <h3>Get a random number from server!</h3>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 input-group">
+          <span class="input-group-addon" id="min">Min</span>
+          <input type="number" class="form-control" placeholder="0" aria-describedby="min" ng-model="main.min">
+        </div>
+        <div class="col-md-6 col-xs-12 input-group">
+          <span class="input-group-addon" id="max">Max</span>
+          <input type="number" class="form-control" placeholder="10" aria-describedby="max" ng-model="main.max">
+        </div>
+      </div>
+      <div>
+        <button class="btn" ng-click="main.getRandomNumberMeteor()">Number from Meteor Method</button>
+        <button class="btn" ng-click="main.getRandomNumberRest()">Number from REST API</button>
+      </div>
+      <pre>{{ main.randomResult | json: 2 }}</pre>
+    </div>
+  </div>
+</div>
