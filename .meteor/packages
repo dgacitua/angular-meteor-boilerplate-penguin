@@ -6,17 +6,17 @@
 
 meteor-base@1.1.0             # Packages every Meteor app needs to have
 mobile-experience@1.0.4       # Packages for a great mobile UX
-mongo@1.1.18                   # The database Meteor supports right now
+mongo@1.1.19                   # The database Meteor supports right now
 reactive-var@1.0.11            # Reactive variable for tracker
 tracker@1.1.3                 # Meteor's client-side reactive programming library
 
 standard-minifier-css@1.3.4   # CSS minifier run for production mode
 es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers
-shell-server@0.2.3            # Server-side component of the `meteor shell` command
+shell-server@0.2.4            # Server-side component of the `meteor shell` command
 abernix:standard-minifier-js
 angular-templates
 pbastowski:angular-babel
-check
+check@1.2.5
 simple:json-routes
 simple:rest-json-error-handler
-accounts-base
+accounts-base@1.3.1

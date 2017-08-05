@@ -8,12 +8,14 @@
       <p>Based on the following technologies</p>
       <ul>
         <li>JavaScript with ECMAScript 6 standard</li>
-        <li>Meteor 1.5</li>
-        <li>AngularJS 1.6</li>
+        <li>Meteor 1.5.1</li>
+        <li>AngularJS 1.6.5</li>
         <li>MongoDB 3.4</li>
-        <li>Bootstrap 3</li>
         <li>jQuery 3</li>
-        <li>angular-ui-router 1.0</li>
+        <li>Twitter Bootstrap 3</li>
+        <li>Font Awesome 4</li>
+        <li>UI-Router 1.0</li>
+        <li>UI-Bootstrap 2.5</li>
       </ul>
       <p><a ui-sref="about">About this template...</a></p>
     </div>
@@ -25,7 +27,9 @@
         <button class="btn" ng-click="main.getPingMeteor()">Ping from Meteor Method</button>
         <button class="btn" ng-click="main.getPingRest()">Ping from REST API</button>
       </div>
-      <pre>{{ main.pingResult | json: 2 }}</pre>
+      <div class="top-padding">
+        <pre>{{ main.pingResult | json: 2 }}</pre>
+      </div>
     </div>
     <div class="col-md-6 col-xs-12">
       <h3>Get a random number from server!</h3>
@@ -39,11 +43,13 @@
           <input type="number" class="form-control" placeholder="10" aria-describedby="max" ng-model="main.max">
         </div>
       </div>
-      <div>
+      <div class="top-padding">
         <button class="btn" ng-click="main.getRandomNumberMeteor()">Number from Meteor Method</button>
         <button class="btn" ng-click="main.getRandomNumberRest()">Number from REST API</button>
       </div>
-      <pre>{{ main.randomResult | json: 2 }}</pre>
+      <div class="top-padding">
+        <pre>{{ main.randomResult | json: 2 }}</pre>
+      </div>
     </div>
   </div>
 </div>

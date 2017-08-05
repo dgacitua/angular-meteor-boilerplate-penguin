@@ -4,6 +4,17 @@ Created by Daniel Gacitua
 
 This is a boilerplate template based on Meteor 1.5 and Angular 1.6 for starting projects. It uses ECMAScript 6 standard for Javascript with class-oriented design. This template has some examples for creating APIs either with REST Requests or Meteor Methods.
 
+This template uses the following technologies:
+- JavaScript with ECMAScript 6 standard
+- Meteor 1.5.1
+- AngularJS 1.6.5
+- MongoDB 3.4
+- jQuery 3
+- Twitter Bootstrap 3
+- Font Awesome 4
+- UI-Router 1.0
+- UI-Bootstrap 2.5
+
 ## Minimum requirements
 
 Installation steps described below are for Ubuntu 16.04:
@@ -37,7 +48,7 @@ Installation steps described below are for Ubuntu 16.04:
 
 ## File structure
 ```
-angular-meteor-bolierplate-penguin/
+angular-meteor-boilerplate-penguin/
 ├── .meteor/
 ├── client/
 │   ├── modules/
