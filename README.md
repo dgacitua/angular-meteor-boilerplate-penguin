@@ -39,7 +39,7 @@ Installation steps described below are for Ubuntu 16.04:
 ## Install and usage instructions
 
 - Download this template as ZIP
-- Enter to te template's directory and edit your project name and author in `package.json`
+- Enter to the template's directory and edit your project name and author in `package.json`
 - Run `meteor npm install` to install all NPM dependencies
 - Run `meteor npm run serve` to enable developer mode with browser live reload
 - Run `meteor npm run build` to package your project as a Node.js application (the result will be available as a .tar.gz file in the project's parent directory)
