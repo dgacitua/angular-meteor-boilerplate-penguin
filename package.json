@@ -8,7 +8,8 @@
   "scripts": {
     "start": "meteor run",
     "serve": "LC_ALL=C.UTF-8 meteor",
-    "build": "meteor npm install --production && meteor build .. --server-only"
+    "build": "meteor npm install --production && meteor build .. --server-only",
+    "package": "meteor npm install --production && meteor build ../new_package --server-only && mv ../new_package/*.tar.gz package.tar.gz && rm -r ../new_package"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.5",
