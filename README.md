@@ -43,12 +43,12 @@ Installation steps described below are for Ubuntu 16.04:
 
 ## Install and usage instructions
 
-- Download this template as ZIP
-- Enter to the template's directory and edit your project name and author in `package.json`
+- Download this template as ZIP (either from latest release or `master` branch)
+- Enter to the template's root directory and edit your project name, author and license in `package.json`
 - Run `meteor npm install` to install all NPM dependencies
-- Run `meteor npm run serve` (GNU/Linux only) or `meteor npm run start` (other Operating Systems) to enable developer mode with browser live reload 
-- Run `meteor npm run build` to package your project as a Node.js application, the result will be available as a .tar.gz file in the project's parent directory (GNU/Linux only)
-- Run `meteor npm run package` to package your project as a Node.js application and get the resulting .tar.gz file in the project's root directory (GNU/Linux only)
+- Run `meteor npm run serve` (Unix-like operating systems) or `meteor npm run start` (other operating systems) to enable developer mode with browser live reload 
+- Run `meteor npm run build` to package your project as a Node.js application, the result will be available as a .tar.gz file in the project's parent directory (Unix-like operating systems only)
+- Run `meteor npm run package` to package your project as a Node.js application and get the resulting .tar.gz file in the project's root directory (Unix-like operating systems only)
 - To install an Atmosphere package (for Meteor), run `meteor add <mypackage>`
 - To install a production NPM package (for Node.js), run `meteor npm install --save <mypackage>`
 - To install a development NPM package (for Node.js), run `meteor npm install --save-dev <mypackage>`
@@ -74,6 +74,7 @@ angular-meteor-boilerplate-penguin/
 ├── imports/
 │   └── database/
 │   │    └── counters.js
+├── private/
 ├── public/
 ├── server/
 │   ├── api/

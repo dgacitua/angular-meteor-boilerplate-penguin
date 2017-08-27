@@ -1,7 +1,5 @@
 import { Meteor } from 'meteor/meteor';
 import './lib/jQueryFix';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
@@ -9,8 +7,8 @@ import angularMeteorAuth from 'angular-meteor-auth';
 import uiBootstrap from 'angular-ui-bootstrap';
 import uiRouter from '@uirouter/angularjs';
 import Loader from 'angular-ecmascript/module-loader';
-import 'angular-animate';
-import 'angular-touch';
+import angularAnimate from 'angular-animate';
+import angularTouch from 'angular-touch';
 
 import RoutesConfig from './modules/routes';
 
@@ -24,6 +22,8 @@ const app = 'app';
 angular.module(app, [
   angularMeteor,
   angularMeteorAuth,
+  angularAnimate,
+  angularTouch,
   uiBootstrap,
   uiRouter,
   ServicesModule.name
